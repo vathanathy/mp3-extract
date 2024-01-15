@@ -20,8 +20,6 @@ auth = HTTPBasicAuth()
 
 @auth.verify_password
 def verify(username, password):
-    print(os.environ.get("usr"))
-    print(os.environ.get("pw"))
     if username == os.environ.get("usr") and password == os.environ.get("pw"):
         return True
     else:
