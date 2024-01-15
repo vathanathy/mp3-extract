@@ -1,2 +1,4 @@
 venv/
 mysite/
+.env
+src/__pycache__/
